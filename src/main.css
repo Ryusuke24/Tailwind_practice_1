@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-link {
+    @apply dark:text-slate-200 dark:hover:text-purple-500 dark:hover:border-purple-500 inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800 transition-all duration-300 ;
+}
+
+.header-button {
+    @apply  dark:border-indigo-500 dark:hover:text-white    dark:text-indigo-500  ml-3 py-1 px-3 border-2 rounded-full border-indigo-600 hover:text-white hover:bg-indigo-800 transition-all duration-300;
+}
+
+@layer components {
+    .main-pagination {
+        @apply  dark:text-slate-200 inline-block py-1 px-3 border border-gray-300 text-gray-500 transition-all duration-300;
+    }
+}
+
+
+.footer-link {
+    @apply dark:text-slate-200 inline-block text-gray-500 hover:underline decoration-gray-700 underline-offset-2 transition-all duration-300;
+}
